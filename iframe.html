@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0044)http://edu.cnzz.cn/adcode/demo96/iframe.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<TITLE>LightWindow frame Demo</TITLE>
+
+	<!-- Meta Tags -->
+	
+	<META name="robots" content="index, follow">
+	
+	<!-- JavaScript -->
+ 
+	<SCRIPT type="text/javascript" src="./LightWindow v2.0_files/prototype.js"></SCRIPT>   
+	<STYLE type="text/css">
+        
+        *, body {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        
+        body {
+            background-color: #ffffff;
+        }
+        
+        p {
+            font-size: 12px;
+            line-height: 25px;
+            padding: 0 0 0 5px;
+        }
+    
+	</STYLE>
+    
+
+
+</HEAD><BODY>
+
+	<P>
+		<A href="http://www.stickmanlabs.com/" class="lightwindow_iframe_link"><STRONG>Open a LightWindow from an iframe!</STRONG></A>
+	</P>
+  
+	<SCRIPT type="text/javascript">
+		var links = $$('.lightwindow_iframe_link');
+		links.each(function(link) {
+			Event.observe(link, 'click', function() {parent.myLightWindow.activate(null, link);}, false);
+			link.onclick = function() {return false;};
+		});		
+	</SCRIPT>  
+    
+
+
+</BODY></HTML>
